@@ -14,6 +14,8 @@
 }
 body {
   width: 100%;
+  background-color: #f8f5f2;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -35,10 +37,20 @@ header nav {
   justify-content: center;
   align-items: center;
 }
+header .divnav2 {
+  cursor: pointer;
+}
+header .divnav2:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
 header .maison-accueil {
   position: absolute;
   top: 40px;
   left: 45px;
+  cursor: pointer;
 }
 
 main {
@@ -83,7 +95,7 @@ main .rhd {
 main p {
   font-size: 12rem;
   text-align: center;
-  line-height: 140px;
+  line-height: 150px;
 }
 main .imageMain {
   height: 100vh;

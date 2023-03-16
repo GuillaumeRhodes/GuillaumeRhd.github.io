@@ -13,6 +13,8 @@
 }
 body {
     width: 100%;
+    background-color: #f8f5f2;
+    scroll-behavior: smooth;
 }
 header {
     width: 100%;
@@ -34,10 +36,20 @@ header {
         justify-content: center;
         align-items: center;
     }
+    .divnav2 {
+        cursor: pointer;
+    }
+    .divnav2:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid black;
+        opacity: 1;
+    }
     .maison-accueil {
         position: absolute;
         top: 40px;
         left: 45px;
+        cursor: pointer;
     }
 }
 main {
@@ -83,7 +95,7 @@ main {
     p {
         font-size: 12rem;
         text-align: center;
-        line-height: 140px;
+        line-height: 150px;
     }
     .imageMain {
         height: 100vh;
